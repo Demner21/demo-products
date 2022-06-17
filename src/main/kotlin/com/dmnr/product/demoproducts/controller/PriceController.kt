@@ -14,15 +14,3 @@ class PriceController {
         return "0"
     }
 }
-
-@RestController
-class ProductController {
-    @GetMapping("/products")
-    fun index(): List<Product> = listOf(
-        Product("1","phone"),
-        Product("2","pc"),
-        Product("3","mouse")
-    )
-}
-
-data class Product(val id: String, val name: String)
